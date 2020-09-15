@@ -1,0 +1,36 @@
+.row__posters {
+    display: flex;
+    overflow-y: hidden ;
+    overflow-x: scroll;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* .row__posters::-webkit-scrollbar {
+    display: none;
+} */
+
+.row__poster {
+    width: 150px;
+    object-fit: contain;
+    height: 220px;
+    transition: transform 450ms;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.row__poster:hover {
+transform: scale(1.05);
+/* opacity: 1; */
+cursor: pointer;
+}
+
+.row__ratingCircle {
+    background-color: lightcoral;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
