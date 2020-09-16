@@ -31,13 +31,16 @@ console.log(movie)
        className="banner">
            <div className="banner__contents">
 
-  <h1>Welcome..</h1>
+            <h1>Welcome..</h1>
             <h2>Millions of movies, TV shows and people to discover. Explore now.</h2>
-{/* <h2>
-    {movie?.title|| movie?.name || movie?.original_name}
-</h2> */}
-            <div>
-            <input style={{width:'80%'}} placeholder="Search for a movie, tv show, person ..."/>
+            {/* <h2>
+                {movie?.title|| movie?.name || movie?.original_name}
+            </h2> */}
+            <div className="banner__input">
+            <input placeholder="Search for a movie, tv show, person ..."/>
+            <div className="button__search">
+                <p>Search</p>
+            </div>
             </div>
 
            </div>

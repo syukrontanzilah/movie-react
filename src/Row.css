@@ -1,6 +1,11 @@
 .row {
     /* margin-left: 40px; */
 }
+
+.row > h2 {
+    margin-left: 70px;
+    margin-top: 30px;
+}
 .row__posters {
     display: flex;
     overflow-y: hidden ;
@@ -23,6 +28,7 @@
     transition: transform 450ms;
     margin-right: 15px;
     border-radius: 10px;
+ 
 }
 
 .row__poster:hover {
@@ -31,11 +37,35 @@ transform: scale(1.05);
 cursor: pointer;
 }
 
+.row__posters .title__movie {
+    color: black;
+    font-weight: 600;
+    font-size: 15px
+}
+
+.row__posters .date__movie {
+    color: gray;
+    font-weight: 400;
+    font-size: small
+}
+
 .row__ratingCircle {
-    background-color: lightcoral;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    align-items: center;
+    background-color: #474747;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
     justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding-inline: 10px;
+
+}
+
+.date__rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 18px;
 }

@@ -1,12 +1,14 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import axios from './axios'
 import './Row.css'
 import YouTube from 'react-youtube'
 import movieTrailer from 'movie-trailer'
 
+
+
 const base_url = "https://image.tmdb.org/t/p/original/"
 const colorRating = () => {
-    
+  
 }
 
 const Row =({title, fetchUrl})=> {
@@ -44,6 +46,8 @@ const Row =({title, fetchUrl})=> {
 
 console.log(movies)
 
+
+
     return (
         <div className="row">
         <h2 >{title}</h2>
@@ -52,6 +56,7 @@ console.log(movies)
                 {
                     movies.map(movie =>(
                         <div>
+                            
                         <img
                         onClick ={()=> handleClick(movie)}
                         key={movie.id}
@@ -59,13 +64,33 @@ console.log(movies)
                         src ={`${base_url}${movie.poster_path}`}
                         alt={movie.name}
                         />
-                        <div className="row__ratingCircle">
-                        <p style={{color:'white'}}>{movie.vote_average}</p>
-                        </div>
+                      
+                        <p className="title__movie">{ movie.title}</p>
 
-                        
-                        <p>{movie.title}</p>
-                        <p>{movie.release_date}</p>
+                    <div className="date__rating">
+                <p className="date__movie">{movie.release_date}</p>
+                    <div style={{backgroundColor:  movie.vote_average >= 8 ? "darkcyan" :'orange'}} className="row__ratingCircle">
+                                    <p style={{color:'white', }}>{movie.vote_average*10 + "%"}</p>
+                                    </div> 
+                        </div>
+                      
+                     
+                     
+
+{/* contoh */}
+                     {/* <div>
+                    <p>{movie.title}</p>
+<p>{movie.overview}</p>
+                    <h4>{movie.original_title}</h4>
+<p>{movie.original_language}</p>
+                    <h4>{movie.budget}</h4>
+<p>{movie.runtime + "minutes"}</p>
+
+
+                       </div> */}
+{/* contoh end */}
+
+
                         </div>
                     ))
                 }
@@ -79,3 +104,5 @@ console.log(movies)
 }
 
 export default Row
+
+

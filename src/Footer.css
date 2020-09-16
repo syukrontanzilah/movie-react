@@ -1,7 +1,50 @@
 .footer {
-    background-color: violet;
+    background-color: darkcyan;
     display: flex;
     padding: 50px 100px;
     align-items: center;
     justify-content: center;
+}
+
+.footer__row {
+    margin: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+   
+}
+
+.footer__row > img {
+    width: 120px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.footer__row > p  {
+    color: white;
+    opacity: 0.8;
+
+}
+
+.footer__row > p:hover  {
+   cursor: pointer;
+    opacity: 1;
+}
+
+.footer__row > h4 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+.hai {
+    background-color: #fff;
+   color: darkcyan;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: small;
+    margin-top: 20px;
+}
+
+.hai:hover {
+cursor: pointer;
+color: darkturquoise;
 }

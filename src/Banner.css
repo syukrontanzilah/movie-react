@@ -8,12 +8,50 @@
 }
 
 .banner__contents {
-    margin-left: 50px;
-padding-top: 50px;
+    margin-left: 70px;
+    padding-top: 130px;
+}
+
+.banner__contents > h1 {
+    font-size: xxx-large;
+}
+
+.banner__input {
+margin-top: 30px;
+display: flex;
+
+}
+
+.banner__input > input {
+    padding: 15px 20px;
+    border-radius: 30px;
+    width: 80%;
+    border: none;
+    outline-width: 0;
+}
+
+.button__search {
+    background-color: darkcyan;
+    width: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+    transition: transform 450ms;
+}
+
+.button__search:hover {
+    background-color: lightblue;
+    color: darkcyan;
+    cursor: pointer;
+    font-weight: 700;
+    transform: scale(1.04);
 }
 
 .banner__fadebottom {
-    height: 300px;
+    height: 150px;
     background-image: linear-gradient(
         180deg,
         transparent,
@@ -21,3 +59,4 @@ padding-top: 50px;
         #111
     );
 }
+

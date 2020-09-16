@@ -7,12 +7,11 @@ import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import { Avatar } from '@material-ui/core';
 
 function Navbar() {
-
 const [show, handleShow] = useState(false)
 
 useEffect(()=>{
 window.addEventListener("scroll", ()=> {
-    if(window.scrollY > 250) {
+    if(window.scrollY > 280) {
 handleShow(true)
     }else handleShow(false);
 })
@@ -45,27 +44,28 @@ return () => {
                 <div className="left__option">
                 <p>More</p>
                 </div>
-                  
                </div>
            </div>
 
            <div className="nav__right">
            <div className="right__menu">
                <div className="button__right">
-                    <AddRoundedIcon style={{height:30, width:30}} />
+                <AddRoundedIcon style={{height:30, width:30}} />
                </div>
                <div className="button__right">
-                     <LanguageRoundedIcon/>
+                <LanguageRoundedIcon/>
                </div>
                <div className="button__right">
-                       <NotificationsRoundedIcon/>
+                <NotificationsRoundedIcon/>
                </div>
                <div className="button__right">
-                         <Avatar style={{height:30, width:30}} src="https://cdn.idntimes.com/content-images/community/2019/10/1570055614033-instasave-b58e06413ecd31b1e0932e6374245076.jpg"/>
+                <Avatar 
+                style={{height:30, width:30}} 
+                src="https://cdn.idntimes.com/content-images/community/2019/10/1570055614033-instasave-b58e06413ecd31b1e0932e6374245076.jpg"/>
                </div>
 
                <div className="button__right">
-                       <SearchRoundedIcon/>
+                <SearchRoundedIcon/>
                </div>
                   
                </div>

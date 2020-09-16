@@ -15,7 +15,7 @@ const App = () => {
 <Banner/>
 
 <Row
-title="WHATS POPULAR"
+title="What's Popular"
 fetchUrl={requests.fetchNetflixOriginals}
 />
 
@@ -25,7 +25,7 @@ fetchUrl={requests.fetchTrending}
 />
 
 <Row
-title= "Action moview"
+title= "Action Movie"
 fetchUrl={requests.fetchActionMovies}
 />
 
