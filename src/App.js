@@ -4,6 +4,7 @@ import Row from './Row'
 import requests from './requests'
 import Banner from './Banner'
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 const App = () => {
   return(
@@ -28,6 +29,8 @@ title= "Action moview"
 fetchUrl={requests.fetchActionMovies}
 />
 
+
+<Footer/>
 
     </div>
   )
