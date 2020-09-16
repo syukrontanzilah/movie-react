@@ -3,6 +3,9 @@ import axios from './axios'
 import './Row.css'
 
 const base_url = "https://image.tmdb.org/t/p/original/"
+const colorRating = () => {
+    
+}
 
 const Row =({title, fetchUrl})=> {
     const [movies, setMovies] = useState([]) 
@@ -32,7 +35,7 @@ console.log(movies)
                         alt={movie.name}
                         />
                         <div className="row__ratingCircle">
-                        <p>{movie.vote_average}</p>
+                        <p style={{color:'white'}}>{movie.vote_average}</p>
                         </div>
 
                         

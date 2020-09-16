@@ -2,12 +2,16 @@ import React from 'react'
 import './App.css'
 import Row from './Row'
 import requests from './requests'
+import Banner from './Banner'
+import Navbar from './Navbar'
 
 const App = () => {
   return(
-<div className="App">
+<div  className="app">
 
-<h1>TMDB</h1>
+<Navbar/>
+
+<Banner/>
 
 <Row
 title="WHATS POPULAR"
@@ -15,10 +19,14 @@ fetchUrl={requests.fetchNetflixOriginals}
 />
 
 <Row
-title="Trending Now"
+title="Trending"
 fetchUrl={requests.fetchTrending}
 />
 
+<Row
+title= "Action moview"
+fetchUrl={requests.fetchActionMovies}
+/>
 
 
     </div>
