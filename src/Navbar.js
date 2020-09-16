@@ -28,7 +28,7 @@ return () => {
                />
 
                <div className="left__menu">
-                   <p>Movies</p>
+                   <p style={{color:'white'}}>Movies</p>
                    <p>TV Shows</p>
                    <p>People</p>
                    <p>More</p>
