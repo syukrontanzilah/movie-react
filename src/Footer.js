@@ -14,7 +14,6 @@ function Footer() {
             </div>
             </div>
 
-
             <div className="footer__row">
             <h4>THE BASICS</h4>
             <p>About TMDB</p>
@@ -23,8 +22,6 @@ function Footer() {
             <p>API</p>
             </div>
 
-
-
             <div className="footer__row">
             <h4>GET INVOLVED</h4>
             <p>Contribution Bible</p>
@@ -32,7 +29,6 @@ function Footer() {
             <p>Add New Movie</p>
             <p>Add New TV Show</p>
             </div>
-
 
             <div className="footer__row">
             <h4>COMMUNITY</h4>
